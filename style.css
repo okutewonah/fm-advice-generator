@@ -7,7 +7,11 @@
   --dark-grayish-blue: hsl(217, 19%, 24%);
   --dark-blue: hsl(218, 23%, 16%);
 }
+html {
+  box-sizing: border-box;
+}
 body {
+  margin: 0;
   font-family: 'Manrope', sans-serif;
   display: flex;
   justify-content: center;
@@ -87,4 +91,18 @@ button:hover {
 }
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+/* Media Query: Mobile */
+@media screen and (max-width: 375px) {
+  .container {
+    width: 360px;
+    height: 300px;
+  }
+  .quote-text {
+    font-size: 1.1rem;
+  }
+  #divider {
+    width: 300px;
+  }
 }
