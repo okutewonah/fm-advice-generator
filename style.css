@@ -51,6 +51,11 @@ button {
   width: 50px;
   padding: 0;
   cursor: pointer;
+  transition: transform .5s ease;
+}
+button:hover {
+  box-shadow: 0 0 100px var(--neon-green);
+  transform: scale(1.3);
 }
 /* Spinner */
 .loader {
