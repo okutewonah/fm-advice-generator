@@ -7,3 +7,54 @@
   --dark-grayish-blue: hsl(217, 19%, 24%);
   --dark-blue: hsl(218, 23%, 16%);
 }
+body {
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--dark-blue);    
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 350px;
+  background-color: var(--dark-grayish-blue);
+  border-radius: 25px;
+}
+h1 {
+  color: var(--neon-green);
+  font-size: 1rem;
+  letter-spacing: 5px;
+}
+blockquote {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--light-cyan);
+}
+button {
+  position: absolute;
+  bottom: -1.5rem;
+  background-color: var(--neon-green);
+  border: none;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  cursor: pointer;
+}
+.attribution { 
+  margin-top: 3rem;
+  font-size: 11px; 
+  text-align: center; 
+  color: var(--light-cyan);
+  letter-spacing: 1px;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
