@@ -10,21 +10,21 @@
 </head>
 <body>
   <main>
-    <div class="container">
+    <div class="container" id="quote-container">
       <!-- Quote heading -->
       <h1>ADVICE #<span id="quote-id"></span></h1>
       <!-- Quote body -->
-      <blockquote>
+      <blockquote class="quote-text">
         <q>
+          <div class="loader" id="loader"></div>
           <span id="quote"></span>
         </q>
       </blockquote>
       <img src="images/pattern-divider-desktop.svg" alt="pattern-divider-desktop">
-      <button type="button">
+      <button type="button" id="new-quote">
         <img src="images/icon-dice.svg" alt="icon-dice">
-      </button>
-    </div>
-    <div class="loader" id="loader"></div>
+      </button>      
+    </div>    
   </main>
   <footer>
     <div class="attribution">

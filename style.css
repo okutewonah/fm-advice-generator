@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   height: 100vh;
   background-color: var(--dark-blue);    
@@ -32,10 +33,13 @@ h1 {
   font-size: 1rem;
   letter-spacing: 5px;
 }
-blockquote {
+.quote-text {
   font-size: 28px;
   font-weight: 800;
   color: var(--light-cyan);
+}
+.long-quote {
+  font-size: 20px;
 }
 button {
   position: absolute;
@@ -54,8 +58,8 @@ button {
   border-radius: 50%;
   border-top: 16px solid var(--neon-green);
   border-bottom: 16px solid var(--neon-green);
-  width: 120px;
-  height: 120px;
+  width: 60px;
+  height: 60px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
