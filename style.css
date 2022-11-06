@@ -94,33 +94,18 @@ button:hover {
 }
 
 /* Media Query: Mobile */
-@media screen and (max-width: 320px) {
-  .container {
-    width: 300px;
-    height: 300px;
-  }
-  .quote-text {
-    font-size: 1.1rem;
-  }
-  .long-quote {
-    font-size: 1rem;
-  }
-  #divider {
-    width: 300px;
-  }
-}
 @media screen and (max-width: 375px) {
   .container {
-    width: 360px;
-    height: 300px;
+    width: 300px;
+    height: 280px;
   }
   .quote-text {
     font-size: 1.1rem;
   }
   .long-quote {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   #divider {
-    width: 300px;
+    width: 280px;
   }
 }
