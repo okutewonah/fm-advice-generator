@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
 :root {
   --light-cyan: hsl(193, 38%, 86%);
@@ -12,14 +12,14 @@ html {
 }
 body {
   margin: 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
   height: 100vh;
-  background-color: var(--dark-blue);    
+  background-color: var(--dark-blue);
 }
 .container {
   position: relative;
@@ -27,8 +27,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 550px;
-  height: 350px;
+  /* width: 550px; */
+  max-width: 800px;
+  height: auto;
   background-color: var(--dark-grayish-blue);
   border-radius: 25px;
 }
@@ -36,6 +37,10 @@ h1 {
   color: var(--neon-green);
   font-size: 1rem;
   letter-spacing: 5px;
+}
+.divider {
+  width: 90%;
+  margin-bottom: 2rem;
 }
 .quote-text {
   font-size: 28px;
@@ -55,7 +60,7 @@ button {
   width: 50px;
   padding: 0;
   cursor: pointer;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 button:hover {
   box-shadow: 0 0 100px var(--neon-green);
@@ -73,24 +78,32 @@ button:hover {
   animation: spin 2s linear infinite;
 }
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /* End Spinner */
-.attribution { 
+.attribution {
   margin-top: 3rem;
-  font-size: 11px; 
-  text-align: center; 
+  font-size: 11px;
+  text-align: center;
   color: var(--light-cyan);
   letter-spacing: 1px;
 }
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 /* Media Query: Mobile */
